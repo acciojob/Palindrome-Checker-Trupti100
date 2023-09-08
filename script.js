@@ -8,7 +8,6 @@ function isPalindrome(s) {
 
 // Test cases
 console.log(isPalindrome("race a car")); // Output: false
-console.log(isPalindrome("racecar")); // Output: true
 console.log(isPalindrome("RaceCar")); // Output: true
 console.log(isPalindrome("raceCAR")); // Output: true
 
