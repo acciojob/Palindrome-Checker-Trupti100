@@ -1,16 +1,14 @@
 function isPalindrome(s) {
   // Remove non-alphanumeric characters and convert to lowercase
-  s = s.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+  s = s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
   
-  // Reverse the string
-  const reversed = s.split('').reverse().join('');
-  
-  // Check if the original and reversed strings are the same
-  return s === reversed;
+  // Compare the original string with its reverse
+  return s === s.split('').reverse().join('');
 }
 
 // Test cases
-console.log(isPalindrome("race a car")); // false
-console.log(isPalindrome("racecar")); // true
-console.log(isPalindrome("RaceCar")); // true
-console.log(isPalindrome("raceCAR")); // true
+console.log(isPalindrome("race a car")); // Output: false
+console.log(isPalindrome("racecar")); // Output: true
+console.log(isPalindrome("RaceCar")); // Output: true
+console.log(isPalindrome("raceCAR")); // Output: true
+
